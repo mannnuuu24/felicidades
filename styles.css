@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    background-color: #f1c881; /* Fondo en color cálido */
+    color: #4a2c09; /* Color oscuro para el texto */
+}
+
+/* Contenedor del mensaje */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* Confeti */
+.confetti-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.collage img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.collage img:hover {
+    transform: scale(1.1);
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Mantiene el video siempre en la misma posición */
+    bottom: 0; /* Lo coloca en la parte inferior */
+    left: 0; /* Alinea el video con el borde izquierdo */
+    right: 0; /* Alinea con el borde derecho */
+    padding: 10px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.video-container video {
+    max-width: 200px; /* Ajusta el tamaño */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
