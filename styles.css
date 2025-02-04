@@ -7,6 +7,24 @@ body {
     background-color: #f1c881; /* Fondo en color cálido */
     color: #4a2c09; /* Color oscuro para el texto */
 }
+/* Estilos para pantallas grandes (escritorios) */
+body {
+  font-size: 16px;
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
 
 /* Contenedor del mensaje */
 .content {
@@ -61,7 +79,7 @@ body {
 }
 
 .video-container video {
-    max-width: 200px; /* Ajusta el tamaño */
+    max-width: 100%; /* Ajusta el tamaño */
     height: auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
